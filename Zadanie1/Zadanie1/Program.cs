@@ -10,6 +10,25 @@ namespace Zadanie1
     {
         static void Main(string[] args)
         {
+            string tekst = Console.ReadLine();
+
+            if (tekst == "Date")
+            {
+                DateTime now = DateTime.Now;
+                Console.WriteLine(now);
+            }
+
+            else if (tekst.ToCharArray().Any(char.IsDigit))
+            {
+                Console.WriteLine("I,m not calculator");
+
+            }
+            else
+            {
+                Console.WriteLine("Hi!");
+            }
+
+            Console.ReadKey();
         }
     }
 }
